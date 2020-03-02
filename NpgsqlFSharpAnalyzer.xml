@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>NpgsqlFSharpAnalyzer</name></assembly>
+<members>
+<member name="M:Npgsql.FSharp.Analyzers.SyntacticAnalysis.applyLiterals(Microsoft.FSharp.Collections.FSharpMap{System.String,System.String},Npgsql.FSharp.Analyzers.SqlOperation)">
+<summary>
+ Tries to replace [&lt;Literal&gt;] strings inside the module with the identifiers that were used with Sql.query.
+</summary>
+</member>
+<member name="M:Npgsql.FSharp.Analyzers.SyntacticAnalysis.|SqlQuery|_|(FSharp.Compiler.Ast.SynExpr)">
+<summary>
+ Detects `Sql.query {SQL}` pattern
+</summary>
+</member>
+<member name="M:Npgsql.FSharp.Analyzers.SqlAnalysis.analyzeOperation(Npgsql.FSharp.Analyzers.SqlOperation,System.String,Npgsql.FSharp.Analyzers.InformationSchema.DbSchemaLookups)">
+<summary>
+ Uses database schema that is retrieved once during initialization
+ and re-used when analyzing the rest of the Sql operation blocks
+</summary>
+</member>
+<member name="M:Npgsql.FSharp.Analyzers.SqlAnalysis.databaseSchema(System.String)">
+<summary>
+ Tries to read the database schema from the connection string
+</summary>
+</member>
+</members>
+</doc>
